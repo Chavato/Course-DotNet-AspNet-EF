@@ -1,4 +1,5 @@
 ﻿using System;
+using BasicClasses;
 
 namespace Course_DotNet_AspNet_EF
 {
@@ -6,7 +7,8 @@ namespace Course_DotNet_AspNet_EF
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+
         }
     }
 }
