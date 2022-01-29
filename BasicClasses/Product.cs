@@ -6,28 +6,54 @@ namespace BasicClasses
 {
     class Product
     {
-        public string Name;
-        public double Price;
-        public int Quant;
+        private string _name;
+        public double Price { get; private set; }
+        public int Quant { get; private set; }
 
-        double StockValue()
+
+        public Product(string name, double price, int quant)
+        {
+            _name = name;
+            Price = price;
+            Quant = quant;
+        }
+        public Product(string name, double price)
+        {
+            _name = name;
+            Price = price;
+            Quant = 1;
+        }
+
+        public string Nome
+        {
+            get { return _name; }
+            set
+            {
+                if (value != null && value.Length > 1)
+                {
+                    _name = value;
+                }
+            }
+        }
+
+        public double StockValue()
         {
             return Price * Quant;
         }
 
-        void AddProduct(int quantity)
+        public void AddProduct(int quantity)
         {
             Quant += quantity;
         }
 
-        void RemoveProduct(int quantity)
+        public void RemoveProduct(int quantity)
         {
             Quant -= quantity;
         }
 
         public override string ToString()
         {
-            return Name + " -> $"
+            return _name + " -> $"
                 + Price.ToString("F2", CultureInfo.InvariantCulture)
                 + ", "
                 + Quant
