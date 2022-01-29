@@ -2,20 +2,22 @@ using System;
 
 namespace BasicClasses
 {
-    class BankRegister
+    class RegisterAccount
     {
 
         public double MoneyBalance { get; private set; }
         public int AccNumber { get; private set; }
         public string Name { get; set; }
 
-        public BankRegister(int accNumber, string name)
+        public RegisterAccount
+(int accNumber, string name)
         {
             AccNumber = accNumber;
             Name = name;
 
         }
-        public BankRegister(int accNumber, string name, double initialMoney) : this(accNumber, name)
+        public RegisterAccount
+(int accNumber, string name, double initialMoney) : this(accNumber, name)
         {
             PostMoney(initialMoney);
 
