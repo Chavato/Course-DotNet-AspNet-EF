@@ -6,9 +6,16 @@ namespace BasicClasses
     class Triangle
     {
         //lateral sizes
-        public Double SideA;
-        public Double SideB;
-        public Double SideC;
+        public double SideA { get; set; }
+        public double SideB { get; set; }
+        public double SideC { get; set; }
+
+        public Triangle(double sideA, double sideB, double sideC)
+        {
+            SideA = sideA;
+            SideB = sideB;
+            SideC = sideC;
+        }
 
         public double Area()
         {
@@ -21,41 +28,61 @@ namespace BasicClasses
     }
 
 
-    class Squad
+    public class Squad
     {
-        //lateral size
-        public Double Side;
+        public double Side { get; set; }
+
+        public Squad(double side)
+        {
+            Side = side;
+        }
+
+        public double Area()
+        {
+            return Side * Side;
+        }
+
     }
 
-    class Rectangle
+    public class Rectangle
     {
         //lateral sizes
-        public Double Width;
-        public Double Height;
+        public double Height { get; set; }
+        public double Width { get; set; }
 
+        public Rectangle(double height, double width)
+        {
+            Height = height;
+            Width = width;
+        }
 
-        public Double Area()
+        public double Area()
         {
             return Width * Height;
         }
-        public Double Perimeter()
+        public double Perimeter()
         {
             return Width * 2 + Height * 2;
         }
-        public Double Diagonal()
+        public double Diagonal()
         {
             return Math.Sqrt(Math.Pow(Width, 2) + Math.Pow(Height, 2));
         }
     }
 
-    class Circle
+    public class Circle
     {
 
-        double Raio;
-        static double Pi = 3.14;
+        public double Radius { get; set; }
+        private static double Pi = 3.14;
+
+        public Circle(double radius)
+        {
+            Radius = radius;
+        }
         double Diameter()
         {
-            return Raio * 2 * Pi;
+            return Radius * 2 * Pi;
         }
     }
 }
