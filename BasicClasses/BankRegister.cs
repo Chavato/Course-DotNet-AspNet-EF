@@ -9,15 +9,13 @@ namespace BasicClasses
         public int AccNumber { get; private set; }
         public string Name { get; set; }
 
-        public RegisterAccount
-(int accNumber, string name)
+        public RegisterAccount(int accNumber, string name)
         {
             AccNumber = accNumber;
             Name = name;
 
         }
-        public RegisterAccount
-(int accNumber, string name, double initialMoney) : this(accNumber, name)
+        public RegisterAccount(int accNumber, string name, double initialMoney) : this(accNumber, name)
         {
             PostMoney(initialMoney);
 
