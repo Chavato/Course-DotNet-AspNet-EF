@@ -1,7 +1,7 @@
 using System;
-using Entities.Enums;
+using Entities.Enums.Class119;
 
-namespace Entities
+namespace Entities.Class119
 {
     public class Order
     {

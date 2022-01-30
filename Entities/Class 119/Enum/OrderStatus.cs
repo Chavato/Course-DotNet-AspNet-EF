@@ -1,4 +1,4 @@
-namespace Entities.Enums
+namespace Entities.Enums.Class119
 {
     public enum OrderStatus : int
     {
