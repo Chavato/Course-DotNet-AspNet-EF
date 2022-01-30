@@ -1,6 +1,6 @@
-using Entities.Enums.class136;
+using Entities.Enums.Class136;
 
-namespace Entities.class136
+namespace Entities.Class136
 {
     abstract class Shape
     {

@@ -1,7 +1,7 @@
-using Entities.Enums.class136;
+using Entities.Enums.Class136;
 using System;
 
-namespace Entities.class136
+namespace Entities.Class136
 {
     class Circle : Shape
     {

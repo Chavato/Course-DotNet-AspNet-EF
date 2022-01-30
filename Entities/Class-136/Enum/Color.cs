@@ -1,4 +1,4 @@
-namespace Entities.Enums.class136
+namespace Entities.Enums.Class136
 {
     public enum Color
     {
