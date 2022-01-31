@@ -1,0 +1,57 @@
+// using System;
+// using System.Collections.Generic;
+// using System.Globalization;
+// using Entities.Class143;
+// using Entities.Execeptions;
+
+
+
+// namespace Course_DotNet_AspNet_EF
+// {
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             try
+//             {
+//                 System.Console.WriteLine("Room number: ");
+//                 int room = int.Parse(Console.ReadLine());
+
+//                 System.Console.WriteLine("Check-in (dd/MM/yyyy): ");
+//                 DateTime checkIn = DateTime.Parse(Console.ReadLine());
+
+//                 System.Console.WriteLine("Check-out (dd/MM/yyyy): ");
+//                 DateTime checkOut = DateTime.Parse(Console.ReadLine());
+
+//                 Reservation reservation = new Reservation(room, checkIn, checkOut);
+//                 System.Console.WriteLine("Reservation: " + reservation);
+
+//                 System.Console.WriteLine("Do you want update your reservation? (y/n).");
+//                 char val = char.Parse(Console.ReadLine());
+
+//                 if (val == 'y')
+//                 {
+//                     System.Console.WriteLine("Enter data to update the reservartion:");
+//                     System.Console.WriteLine(("Check-in date (dd/MM/yyyy): "));
+//                     checkIn = DateTime.Parse(Console.ReadLine());
+//                     System.Console.WriteLine(("Check-out date (dd/MM/yyyy): "));
+//                     checkOut = DateTime.Parse(Console.ReadLine());
+//                 }
+//             }
+
+//             catch (DomainExcepetion e)
+//             {
+//                 System.Console.WriteLine("Error in reservartion: " + e.Message);
+//             }
+
+//             catch (FormatException e)
+//             {
+//                 System.Console.WriteLine("Format error: " + e.Message);
+//             }
+//             catch (Exception e)
+//             {
+//                 System.Console.WriteLine("Unexpected error: " + e.Message);
+//             }
+//         }
+//     }
+// }
